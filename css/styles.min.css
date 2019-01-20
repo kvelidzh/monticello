@@ -5715,7 +5715,8 @@ section {
     opacity: 0.9; }
 
 .q {
-  height: 44.2%; }
+  width: 100%;
+  height: auto; }
 
 #map {
   height: 100vh; }
