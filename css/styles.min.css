@@ -5606,6 +5606,12 @@ section {
     top: 70px;
     left: 0;
     z-index: 10; }
+  .img:hover, .img:focus {
+    text-decoration: none;
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+    color: #646464; }
 
 .position-center {
   width: 100%;
@@ -5692,7 +5698,7 @@ section {
           background-size: cover;
   width: 100%; }
   .news__lat {
-    coloer: #fff;
+    color: #fff;
     font-size: 4.4em;
     font-weight: 700; }
   .news__bg {
