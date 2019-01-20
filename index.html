@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 </head>
 <body>
-    <section class="banner position-relative">
+    <section class="banner">
     	<header class="header" id="index.html">
     		<nav class="container navbar navbar-expand-lg navbar-light text-uppercase navigation">
     		 	<a href="#index.html">
@@ -182,22 +182,24 @@
 <script src="js/jquery.js"></script>
 <script src="js/scripts.min.js"></script>
 <script>
-var map, marker, infoWindow,
-			center = {
-					lat: 47.1013653,
-					lng: 37.5483022
-				};
-		function initMap() {
-			map = new google.maps.Map(document.getElementById('map'), {
-				center: center,
-				zoom: 16
-			})
+var map, infoWindow;
+		var lat = 47.0793415;
+		var lng = 37.5337379;
 
-			marker = new google.maps.Marker({
-				position: center,
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'),{
+				center: {
+					lat: lat, lng: lng
+				},
+				zoom: 16,
+			});
+			marker = new google.maps.Marker({ 
+				position: {	
+					lat: lat, lng: lng
+				},
 				map : map,
-				title: 'Hello world!',
-				icon: 'favicon.png'
+				title: 'This is...',
+				icon: 'img/mark.png'
 			})
 
 			infoWindow = new google.maps.InfoWindow({
